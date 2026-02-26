@@ -57,7 +57,7 @@ async def query_page(client: AsyncClient, data_source_id: str, title: str) -> bo
 
     response = await client.data_sources.query(
         data_source_id=data_source_id,
-        filter={"property": "Title", "rich_text": {"equals": title}},
+        filter={"property": "BookName", "title": {"equals": title}},
     )
     if len(response["results"]):
         return True
