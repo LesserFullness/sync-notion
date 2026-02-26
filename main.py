@@ -16,7 +16,7 @@ if __name__ == "__main__":
     fire.Fire(
         {
             "sync_read": sync_read,
-            "sync_trending": sync_trending,
-            "sync_producthunt": sync_producthunt,
+            # "sync_trending": sync_trending,
+            # "sync_producthunt": sync_producthunt,
         }
     )
